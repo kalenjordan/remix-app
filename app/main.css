@@ -1,0 +1,187 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background: url("/background.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin-bottom: 1rem;
+
+  a {
+    color: rgb(97, 97, 97);
+    text-decoration: none;
+  }
+}
+
+.Polaris-Frame {
+  background: #ff000000 !important;
+}
+
+.Polaris-Frame__Content {
+  zoom: 1.1;
+}
+
+video {
+  margin-bottom: -7px;
+}
+
+img.logo {
+  filter: grayscale(1);
+  opacity: 0.7;
+  height: 25px;
+}
+
+img.logo.shopify-plus {
+  opacity: 0.5;
+}
+
+img.logo.klaviyo {
+  opacity: 0.6;
+}
+
+img.logo.recharge {
+  opacity: 0.6;
+}
+
+img.logo.xero {
+  opacity: 0.9;
+}
+
+.work-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr); /* Adjust this to fit your needs */
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr); /* Adjust this to fit your needs */
+  }
+  @media only screen and (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr); /* Adjust this to fit your needs */
+  }
+
+  .Polaris-ShadowBevel {
+    align-self: stretch;
+
+    .Polaris-Box {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    img {
+      filter: grayscale(1);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      .Polaris-Box {
+        background-color: white;
+      }
+
+      .Polaris-Icon {
+        color: #b58500;
+      }
+
+      p a {
+        text-decoration: underline;
+      }
+
+      img {
+        filter: grayscale(0);
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    /** Magento */
+    &:nth-child(8) {
+      grid-column: span 2;
+      grid-row: span 1;
+      &:hover {
+        .Polaris-Box {
+          background-color: #fff2e3;
+        }
+      }
+    }
+
+    /*
+    &:nth-child(4) {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    */
+
+    .avatar {
+      width: 20px;
+      border-radius: 5px;
+    }
+
+    @media only screen and (max-width: 650px) {
+      grid-column: span 1 !important;
+    }
+  }
+}
+
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p a {
+  color: black;
+}
+
+.Polaris-CalloutCard {
+  img {
+    border-radius: 5px;
+  }
+}
+
+.callout-hire-me {
+  img {
+    width: 40px;
+  }
+}
+
+.Polaris-InlineStack {
+  .Polaris-Icon {
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+.newsletter-card-title {
+  padding: 12px;
+  background-color: rgb(145, 208, 255);
+}
