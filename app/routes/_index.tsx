@@ -4,6 +4,11 @@ export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
     { name: "description", content: "Welcome to Remix!" },
+    { name: "twitter:card", content: "summary" },
+    {
+      name: "og:image",
+      content: "https://www.flow-helper.com/social_card.png",
+    },
   ];
 };
 
