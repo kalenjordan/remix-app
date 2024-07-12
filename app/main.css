@@ -12,6 +12,7 @@ body {
 }
 
 .breadcrumb {
+  z-index: 1;
   font-size: 0.8rem;
   position: absolute;
   top: 1rem;

@@ -6,8 +6,9 @@
     "**/.server/**/*.tsx",
     "**/.client/**/*.ts",
     "**/.client/**/*.tsx",
-    "app/routes/calendar.jsx"
-, "app/routes/_index.jsx", "app/entry.server.jsx"  ],
+    "app/routes/_index.jsx",
+    "app/entry.server.jsx"
+  ],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": ["@remix-run/node", "vite/client"],

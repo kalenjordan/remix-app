@@ -27,7 +27,7 @@ import {
   DiscountIcon,
   ReceiptRefundIcon,
   ReplayIcon,
-  ReturnIcon,
+  StarFilledIcon,
   ThemeIcon,
   ImportIcon,
   PaymentIcon,
@@ -35,7 +35,7 @@ import {
 } from "@shopify/polaris-icons";
 import { useState } from "react";
 import { TemplateList } from "../components/templates";
-// import { Availability } from "../components/Availability";
+import { Availability } from "../components/availability";
 import Rates from "../components/rates";
 import styles from "../main.css?url";
 
@@ -270,8 +270,35 @@ export default function Index() {
                         </InlineStack>
                       </BlockStack>
                     </Card>
-                    {/*<Availability showBookCall={true} />*/}
+                    <Availability showBookCall={true} />
                     <Rates showButtons={false} />
+                    <Card>
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="0">
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                        </InlineStack>
+
+                        <Text as="p" variant="bodyLg">
+                          "I had the pleasure of working with Kalen, and I must say, Kalen is the best! The effort and
+                          dedication put into completing my project were truly commendable. I am incredibly grateful for
+                          all the hard work and the successful outcome."
+                        </Text>
+                      </BlockStack>
+                    </Card>
                   </BlockStack>
                 </Layout.Section>
               </Layout>
