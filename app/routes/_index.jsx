@@ -34,20 +34,15 @@ import {
   WorkIcon,
 } from "@shopify/polaris-icons";
 import { useState } from "react";
-// import { SimpleIndexTableExample } from "../components/FlowsIndexTable";
+import { TemplateList } from "../components/templates";
 // import { Availability } from "../components/Availability";
-// import Rates from "../components/Rates";
+import Rates from "../components/rates";
 import styles from "../main.css?url";
 
 export const meta = () => {
   return [
-    { title: "Flow Helper 2" },
+    { title: "Flow Helper | Shopify Automation As A Service" },
     { name: "description", content: "Welcome to Remix!" },
-    { name: "twitter:card", content: "summary" },
-    {
-      name: "og:image",
-      content: "https://www.flow-helper.com/social_card.png",
-    },
   ];
 };
 
@@ -209,7 +204,7 @@ export default function Index() {
                         />
                       </BlockStack>
                     </Card>
-                    {/*SimpleIndexTableExample()*/}
+                    {TemplateList()}
                   </BlockStack>
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
@@ -276,7 +271,7 @@ export default function Index() {
                       </BlockStack>
                     </Card>
                     {/*<Availability showBookCall={true} />*/}
-                    {/*<Rates showButtons={false} />*/}
+                    <Rates showButtons={false} />
                   </BlockStack>
                 </Layout.Section>
               </Layout>

@@ -11,6 +11,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@gadget-client/flow-helper": "^1.73.0-development.3421",
+    "@gadgetinc/react": "^0.15.13",
     "@remix-run/node": "^2.10.2",
     "@remix-run/react": "^2.9.2",
     "@remix-run/serve": "^2.9.2",
