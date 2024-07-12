@@ -47,20 +47,10 @@ export default function Index() {
         <Page>
           <Box paddingBlockStart={{ xs: 400, lg: 400 }}>
             <BlockStack gap="500">
-              <BlockStack gap="200">
-                <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
-                  Hire A Shopify Mechanic
-                </Text>
-                <Box paddingInline={{ xs: 600, lg: 3200 }}>
-                  <Text alignment="center" variant="bodyLg" fontWeight="400" className="subtitle">
-                    I specialize in automations for Shopify and love Mechanic!
-                  </Text>
-                </Box>
-              </BlockStack>
               <Box paddingInline={{ xs: "400", sm: "0" }}>
                 <Card>
                   <Bleed marginInline="400" marginBlock="400">
-                    <img style={{ width: "100%", marginBottom: "-7px" }} src="/flow-hire.png"></img>
+                    <img style={{ width: "100%", marginBottom: "-7px" }} src="/mechanic-header.png"></img>
                   </Bleed>
                 </Card>
               </Box>
@@ -108,6 +98,19 @@ export default function Index() {
                             Shopify Automation Specialist
                           </Text>
                         </InlineStack>
+                      </BlockStack>
+                    </Card>
+                    <Card title="Order details" sectioned>
+                      <BlockStack gap="300">
+                        <Text as="h2" variant="headingMd">
+                          "Kalen is a force! Smart, motivated, and kind—a perfect combination."
+                        </Text>
+
+                        <Text as="p" variant="bodyLg">
+                          Matt Sodomsky
+                          <br />
+                          VP, Product & Strategy, Mechanic
+                        </Text>
                       </BlockStack>
                     </Card>
                     <Card title="Order details" background="bg-surface-secondary">
