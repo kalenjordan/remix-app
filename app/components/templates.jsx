@@ -57,7 +57,7 @@ export function TemplateList() {
                 id={template.id}
                 key={template.id}
                 selected={selectedResources.includes(template.id)}
-                onClick={() => (window.location = "/templates/" + template.id)}
+                /*onClick={() => (window.location = "/templates/" + template.id)}*/
                 position="1"
               >
                 <IndexTable.Cell>

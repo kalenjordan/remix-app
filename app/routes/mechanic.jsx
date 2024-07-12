@@ -15,7 +15,6 @@ import {
   InlineStack,
   FooterHelp,
   Layout,
-  Link,
   Frame,
   BlockStack,
   Avatar,
@@ -90,7 +89,7 @@ export default function Index() {
                         </Box>
                         <InlineStack gap="200">
                           <span>
-                            <Thumbnail as="span" size="small" source="/kalen-avatar-circle.png" />
+                            <Thumbnail as="span" size="small" source="/kalen-avatar.png" />
                           </span>
                           <Text as="p" variant="bodyLg">
                             Kalen Jordan
@@ -98,19 +97,6 @@ export default function Index() {
                             Shopify Automation Specialist
                           </Text>
                         </InlineStack>
-                      </BlockStack>
-                    </Card>
-                    <Card title="Order details" sectioned>
-                      <BlockStack gap="300">
-                        <Text as="h2" variant="headingMd">
-                          "Kalen is a force! Smart, motivated, and kind—a perfect combination."
-                        </Text>
-
-                        <Text as="p" variant="bodyLg">
-                          Matt Sodomsky
-                          <br />
-                          VP, Product & Strategy, Mechanic
-                        </Text>
                       </BlockStack>
                     </Card>
                     <Card title="Order details" background="bg-surface-secondary">
@@ -169,7 +155,6 @@ export default function Index() {
                       </BlockStack>
                     </Card>
                     <Rates showButtons={false} />
-
                     {Table()}
                   </BlockStack>
                 </Layout.Section>
@@ -229,6 +214,25 @@ export default function Index() {
                           order information to fulfillment partners automatically. Went above and beyond to help in
                           other areas of automation as well."
                         </Text>
+                      </BlockStack>
+                    </Card>
+                    <Card title="Order details" sectioned>
+                      <BlockStack gap="300">
+                        <Text as="h2" variant="headingMd">
+                          "Kalen is a force! Smart, motivated, and kind—a perfect combination."
+                        </Text>
+
+                        <InlineStack gap="200">
+                          <span>
+                            <Thumbnail as="span" size="small" source="/mechanic-matt.jpeg" />
+                          </span>
+                          <Text as="p" variant="bodyLg">
+                            Matt Sodomsky
+                            <br />
+                            VP, Product & Strategy, Mechanic
+                          </Text>
+                        </InlineStack>
+                        <Text as="p" variant="bodyLg"></Text>
                       </BlockStack>
                     </Card>
                   </BlockStack>
